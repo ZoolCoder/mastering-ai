@@ -1,0 +1,24 @@
+name: Mistake or confusing page
+description: Something is wrong, outdated, broken or hard to understand.
+labels: [content]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The link to the page, or the lesson number.
+      placeholder: https://zoolcoder.github.io/mastering-ai/mastering-ai/foundations/training.html
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or confusing?
+      description: Quote the sentence if you can. "I did not understand this" is a valid report.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix
+      description: Optional. A better sentence, a source, or a link.

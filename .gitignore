@@ -1,0 +1,13 @@
+.DS_Store
+
+# docs toolchain
+/node_modules/
+/build/
+/.cache/
+/.bundle/
+/vendor/
+
+# lab runs
+__pycache__/
+.venv/
+.env

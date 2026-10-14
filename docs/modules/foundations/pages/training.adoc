@@ -1,0 +1,100 @@
+= 1.4 How training works
+:description: Loss, gradients and gradient descent: how a network improves itself, explained without calculus.
+
+.What you will learn
+* What a loss function measures.
+* How gradient descent nudges weights to reduce the loss.
+* What epochs, batches and the learning rate are.
+
+== Step 1: measure the mistake
+
+Training starts with random weights, so the first predictions are bad. To
+improve, the network needs one number that says *how bad*. That number is the
+*loss*.
+
+For price prediction a simple loss is the squared error:
+
+[source,text]
+----
+prediction = 250,000   actual = 210,000
+error      = 40,000
+loss       = 40,000² (squaring makes big mistakes count much more)
+----
+
+Lower loss means better predictions. Training is a search for the weights that
+make the loss as low as possible.
+
+== Step 2: find which way is downhill
+
+Imagine standing on a hillside in thick fog. You want to reach the valley, but
+you can only feel the slope under your feet. So you take a step downhill, feel
+again, and repeat.
+
+That is *gradient descent*:
+
+* The landscape is the loss for every possible combination of weights.
+* The *gradient* is the slope: for each weight, which direction makes the loss
+  go up, and how steeply.
+* Each step moves every weight a little in the downhill direction.
+
+[source,text]
+----
+new_weight = weight − learning_rate × gradient
+----
+
+The method that computes the gradient for every weight in a deep network,
+working backwards from the output, is called *backpropagation*. Libraries such
+as PyTorch do it for you; part 1's lab does it by hand for one neuron.
+
+== Step 3: choose the step size
+
+The *learning rate* is how big each step is.
+
+* Too small: training crawls.
+* Too large: you overshoot the valley and bounce around, or fly off entirely.
+
+Getting it right is one of the most important choices in training.
+
+== The training loop
+
+[source,text]
+----
+repeat for many epochs:
+    for each batch of examples:
+        1. predict          (forward pass)
+        2. compute the loss
+        3. compute gradients (backward pass)
+        4. nudge every weight downhill
+----
+
+* A *batch* is a small group of examples processed together, say 32.
+* An *epoch* is one full pass over the training data.
+
+That loop, run over trillions of words on thousands of chips for weeks, is how
+an LLM is trained. The idea is exactly the same as for one neuron.
+
+.Key ideas
+****
+* The loss is one number for how wrong the model is.
+* The gradient says which way to change each weight to reduce the loss.
+* Gradient descent takes small downhill steps, sized by the learning rate.
+* Predict, measure, compute gradients, update: repeat.
+****
+
+== Check yourself
+
+. Why square the error instead of using it directly?
+. Training loss jumps up and down wildly and never settles. What would you try?
+. What is the difference between a batch and an epoch?
+
+[%collapsible]
+.Answers
+====
+. Squaring makes every error positive, so errors cannot cancel out, and it
+  punishes big mistakes more than small ones.
+. Lower the learning rate: the steps are overshooting.
+. A batch is a few examples processed in one update; an epoch is one pass over
+  all the training data, which takes many batches.
+====
+
+Next: xref:road-to-llms.adoc[].

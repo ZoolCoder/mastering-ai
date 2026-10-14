@@ -1,0 +1,63 @@
+# Antora playbook for the Mastering AI course site.
+#
+# Build locally with:
+#   npm ci && npm run docs
+# then open build/site/index.html. `npm run docs:site` skips the PDF, which
+# needs Ruby and asciidoctor-pdf (bundle install).
+#
+# The content source is this working tree, so a local build shows what is
+# checked out right now instead of what was last pushed.
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+      index_latest_only: true
+    # Assembles every page into one PDF coursebook, configured by
+    # antora-assembler.yml. Off by default because it needs Ruby;
+    # `npm run docs` turns it on with `--extension pdf`.
+    - id: pdf
+      require: '@antora/pdf-extension'
+      enabled: false
+    # From zc-supplemental-ui: "Last updated" from git, a Markdown copy of
+    # each page plus llms.txt, and a link-preview card per page.
+    - zc-supplemental-ui/extensions/last-updated
+    - zc-supplemental-ui/extensions/llms
+    - zc-supplemental-ui/extensions/og-image
+
+site:
+  title: Mastering AI
+  url: https://zoolcoder.github.io/mastering-ai
+  start_page: mastering-ai::index.adoc
+  robots: allow
+
+content:
+  sources:
+    - url: .
+      start_path: docs
+      branches: HEAD
+      edit_url: 'https://github.com/zoolcoder/mastering-ai/edit/main/{path}'
+
+ui:
+  bundle:
+    # Pinned to a release, so a change to the bundle reaches this site only by
+    # a bump here.
+    url: https://github.com/zoolcoder/zc-supplemental-ui/releases/download/v0.2.1/ui-bundle.zip
+
+asciidoc:
+  extensions:
+    - '@asciidoctor/tabs'
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    tabsize: 2
+    source-highlighter: highlight.js
+    page-zc-repo: https://github.com/zoolcoder/mastering-ai
+    page-zc-pdf: mastering-ai/_exports/index.pdf
+    page-zc-tagline: From zero to agents
+    page-zc-site: https://zoolcoder.com/
+    page-zc-site-name: zoolcoder.com
+    page-zc-owner: ZoolCoder
+    page-zc-license: Text CC BY 4.0 · code MIT
+
+output:
+  dir: ./build/site

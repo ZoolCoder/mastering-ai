@@ -1,0 +1,92 @@
+= 1.2 How machines learn
+:description: Data, features and labels, the three kinds of learning, and why models fail on data they have not seen.
+
+.What you will learn
+* What data, features and labels are.
+* The three main kinds of machine learning.
+* Why we test a model on data it has never seen.
+
+== Data, features and labels
+
+Say you want to predict the price of a flat. You collect past sales:
+
+[cols="1,1,1,1"]
+|===
+| Size (m²) | Rooms | Floor | Price (€)
+
+| 52 | 2 | 3 | 210,000
+| 78 | 3 | 1 | 295,000
+| 110 | 4 | 5 | 450,000
+|===
+
+* Each row is an *example*.
+* The input columns (size, rooms, floor) are *features*.
+* The column you want to predict (price) is the *label*.
+
+The model's job: given the features of a new flat, predict its label.
+
+== Three kinds of learning
+
+*Supervised learning.* Every example has a label. The model learns to map
+features to labels. Spam filters, price prediction and image classifiers work
+this way.
+
+*Unsupervised learning.* No labels. The model finds structure by itself, such
+as groups of similar customers or topics in a pile of documents.
+
+*Reinforcement learning (RL).* No fixed answers. The model acts, gets a reward
+or a penalty, and learns which actions earn more reward. Game-playing AIs
+learned this way, and part 2 shows how RL turns a raw language model into a
+helpful assistant.
+
+LLMs use a fourth trick, *self-supervised learning*: the label comes from the
+data itself. Take a sentence, hide the next word, and ask the model to guess
+it. Every sentence on the internet becomes a training example, with no person
+labelling anything. That is why LLMs can learn from so much text.
+
+== Training, testing and overfitting
+
+A model that memorises its examples is useless. You want it to *generalise*: to
+work on examples it has never seen.
+
+So you split the data:
+
+* *Training set*, about 80%: the model learns from this.
+* *Test set*, about 20%: hidden during training, used once at the end to
+  measure how good the model really is.
+
+*Overfitting* is when a model does well on training data and badly on test
+data. It learned the noise instead of the pattern, like a student who memorised
+last year's exam answers and fails this year's questions.
+
+*Underfitting* is the opposite: the model is too simple to capture the pattern
+at all.
+
+TIP: The same idea returns in part 9 as *evals*: you test an AI app on cases
+it was not tuned on, or you fool yourself.
+
+.Key ideas
+****
+* Features go in, a label comes out.
+* Supervised learning uses labels; unsupervised finds structure; reinforcement
+  learns from rewards.
+* LLMs learn self-supervised: the next word is the label.
+* Always measure on data the model has not seen.
+****
+
+== Check yourself
+
+. In a dataset of emails marked spam or not, what is the label?
+. Why can LLMs train on far more data than an image classifier?
+. Your model scores 99% on training data and 60% on test data. What happened?
+
+[%collapsible]
+.Answers
+====
+. Spam or not spam.
+. Self-supervised learning needs no human labels: the next word is the label.
+. Overfitting. It memorised the training examples instead of learning the
+  general pattern.
+====
+
+Next: xref:neural-networks.adoc[].

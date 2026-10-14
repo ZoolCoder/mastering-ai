@@ -1,0 +1,37 @@
+= Part 3 · Prompt engineering
+:description: Clear instructions, examples, structure, thinking and chaining.
+:navtitle: 3 · Prompt engineering
+
+[.hero]
+--
+A prompt is a specification. This part teaches you to write ones that work the first time, and to test them like code.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. Be clear and direct: the new-colleague test
+. Roles and system prompts
+. Examples: zero-shot, few-shot and their traps
+. Structure with XML tags and delimiters
+. Let the model think: chain of thought and extended thinking
+. Structured output: JSON and schemas
+. Prompt chaining: break big tasks into steps
+. Long documents: where to put what
+. Testing prompts: a small eval set before you ship
+. Lab: improve a failing prompt step by step, with a scorecard
+
+== After this part you can
+
+* Turn a vague request into a prompt with role, context, task, format and examples.
+* Choose between one prompt and a chain of prompts.
+* Measure whether a prompt change helped, instead of guessing.
+
+== Go deeper
+
+* https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview[Prompt engineering overview (Anthropic)]
+* https://github.com/anthropics/prompt-eng-interactive-tutorial[Interactive prompt engineering tutorial (Anthropic)]
+* https://www.promptingguide.ai/[Prompt Engineering Guide (DAIR.AI)]
+
+Next: xref:apis:index.adoc[Part 4 · Building with model APIs].

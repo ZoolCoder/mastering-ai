@@ -1,0 +1,84 @@
+= 1.5 The road to LLMs
+:description: From hand-written rules to ChatGPT and coding agents: the six steps that got us here.
+
+.What you will learn
+* The main milestones of modern AI, and why each one mattered.
+* Why "scale" became the central idea.
+
+== Six steps
+
+[cols="1,2,3"]
+|===
+| When | Milestone | Why it mattered
+
+| 1950s–1980s
+| Rule-based AI and expert systems
+| Hand-written rules. Impressive in narrow areas, brittle everywhere else.
+
+| 1986
+| Backpropagation popularised
+| Made it practical to train networks with hidden layers (lesson 1.4).
+
+| 2012
+| AlexNet wins ImageNet
+| A deep network trained on GPUs crushed the image-recognition benchmark.
+Deep learning took over.
+
+| 2017
+| The Transformer ("Attention Is All You Need")
+| A new architecture that reads a whole sequence at once and trains well in
+parallel. Every modern LLM is built on it. Part 2 explains it.
+
+| 2018–2022
+| GPT-1, 2, 3 and scaling laws
+| Bigger models, trained on more data with more compute, got predictably
+better. New abilities appeared at scale.
+
+| 2022–today
+| ChatGPT, then tools, reasoning and agents
+| Assistant training made LLMs useful to everyone. Then models learned to call
+tools, think before answering, and act in loops: agents.
+|===
+
+== Scale
+
+The surprise of the last decade: the same simple recipe, a Transformer trained
+to predict the next word, keeps getting better when you make three things
+bigger together:
+
+* *Parameters*: the size of the model.
+* *Data*: how much text it trains on.
+* *Compute*: how many chip-hours go into training.
+
+These *scaling laws* turned AI from a research problem into an engineering and
+investment race.
+
+== Where this course goes next
+
+Part 2 opens the box: how an LLM turns text into numbers, predicts the next
+word, and becomes an assistant. Parts 3 to 6 show how to use and build on it.
+Parts 7 and 8 cover the newest layer: agents that act, and the harnesses that
+make them reliable.
+
+.Key ideas
+****
+* Rules gave way to learning; learning gave way to deep learning on GPUs.
+* The Transformer (2017) is the architecture behind every modern LLM.
+* Scale of parameters, data and compute drove most of the progress.
+* The newest step is agents: models that use tools in a loop.
+****
+
+== Check yourself
+
+. What two things made AlexNet possible in 2012?
+. What three things grow together under the scaling laws?
+
+[%collapsible]
+.Answers
+====
+. Deep networks trained with backpropagation, and GPUs fast enough to train
+  them on a large labelled dataset (ImageNet).
+. Parameters, training data and compute.
+====
+
+Next: xref:lab.adoc[].

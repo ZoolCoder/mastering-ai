@@ -1,0 +1,36 @@
+= Part 7 · Coding agents
+:description: Claude Code, Codex and friends: memory files, plans, skills and hooks.
+:navtitle: 7 · Coding agents
+
+[.hero]
+--
+Coding agents are the most mature agents today. Learning to work with them well is the fastest way to feel what agents can do, and where they break.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. The landscape: Claude Code, Codex, Cursor, Copilot, Gemini CLI and open agents
+. Explore, plan, code, commit: a working rhythm
+. Memory files: CLAUDE.md and AGENTS.md
+. Permissions and sandboxes
+. Slash commands, skills and plugins
+. Hooks: rules the agent cannot forget
+. Subagents and parallel sessions
+. Reviewing agent output: tests, diffs and taste
+. Lab: set up a repository so an agent can work in it unsupervised for an hour
+
+== After this part you can
+
+* Run a feature from plan to merged commit with a coding agent.
+* Write a memory file that helps instead of distracts.
+* Use skills, hooks and subagents for the jobs each is good at.
+
+== Go deeper
+
+* https://www.anthropic.com/engineering/claude-code-best-practices[Claude Code best practices (Anthropic)]
+* https://agents.md/[AGENTS.md]
+* https://docs.anthropic.com/en/docs/claude-code/overview[Claude Code documentation]
+
+Next: xref:harness:index.adoc[Part 8 · Harness engineering].

@@ -1,0 +1,37 @@
+= Part 4 · Building with model APIs
+:description: Your first API call through tools, streaming, caching and cost.
+:navtitle: 4 · Building with model APIs
+
+[.hero]
+--
+Chat apps hide the machinery. Here you call models from code, and learn every part of the request you will use from now on.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. Your first API call: messages, roles and parameters
+. Conversations: the model is stateless, your code keeps the history
+. Streaming responses
+. Structured output and validation
+. Tool use (function calling): letting the model ask your code to act
+. Vision and documents: images and PDFs as input
+. Tokens, pricing and prompt caching
+. Batching, rate limits and retries
+. Running open models locally
+. Lab (TypeScript): a command-line assistant with one tool
+
+== After this part you can
+
+* Build a multi-turn chat in code and explain why history must be resent.
+* Define a tool, handle the model's tool call and return the result.
+* Estimate and cut the cost of an AI feature.
+
+== Go deeper
+
+* https://github.com/microsoft/generative-ai-for-beginners[Generative AI for Beginners (Microsoft)]
+* https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview[Tool use (Anthropic)]
+* https://platform.openai.com/docs/guides/function-calling[Function calling (OpenAI)]
+
+Next: xref:context:index.adoc[Part 5 · Context engineering and RAG].

@@ -1,0 +1,28 @@
+= Part 11 · Capstone
+:description: Build and ship an agent with a real harness, end to end.
+:navtitle: 11 · Capstone
+
+[.hero]
+--
+Put every part together: pick a real problem, build an agent for it, wrap it in a harness, prove it works with evals, and ship it.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. Pick a problem worth automating
+. Design: workflow or agent, tools, context and state
+. Build the agent and its tools
+. Build the harness: instructions, checks and a loop
+. Evals and a safety review
+. Ship it and write it up
+
+== After this part you can
+
+* Take an AI idea from blank page to a working, tested, documented project.
+* Defend every design choice with what you learned in parts 1 to 10.
+
+== Go deeper
+
+* https://github.com/walkinglabs/learn-harness-engineering[Learn Harness Engineering projects (WalkingLabs)]

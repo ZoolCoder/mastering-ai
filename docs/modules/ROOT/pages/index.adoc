@@ -1,0 +1,70 @@
+= Mastering AI
+:description: A free, open course that takes you from zero knowledge of AI to building agents and the harnesses that make them reliable.
+:navtitle: Start here
+
+[.hero]
+--
+A free, open course that starts at "what is AI?" and ends with you building
+agents, and the harnesses that make them reliable.
+
+No background needed. Each part builds on the one before. Each lesson ends with
+a check, and each part ends with a hands-on lab.
+--
+
+[.cta]
+xref:foundations:index.adoc[Start lesson 1] xref:paths.adoc[Pick a path] https://github.com/zoolcoder/mastering-ai[GitHub]
+
+== What you will be able to do
+
+By the end of the full course you can:
+
+* Explain how a neural network learns and how a large language model (LLM)
+  writes text, without hand-waving.
+* Write prompts that work the first time, and test them like code.
+* Build an app on a model API: tools, structured output, streaming, caching.
+* Give a model the right context with retrieval (RAG) and memory.
+* Build an agent loop from scratch, then with an SDK and MCP.
+* Work with coding agents such as Claude Code and Codex, the way strong teams do.
+* Engineer the harness: the instructions, tools, checks and loops that turn a
+  capable model into a reliable one.
+* Ship it safely: evals, guardrails, prompt-injection defence and cost control.
+
+== The course in eleven parts
+
+[.cards]
+* xref:foundations:index.adoc[1 · Foundations] +
+What AI is, how machines learn from data, and how a neural network works.
+* xref:llms:index.adoc[2 · How LLMs work] +
+Tokens, embeddings, attention, training, sampling and why models hallucinate.
+* xref:prompting:index.adoc[3 · Prompt engineering] +
+Clear instructions, examples, structure, thinking and chaining.
+* xref:apis:index.adoc[4 · Building with model APIs] +
+Your first API call through tools, streaming, caching and cost.
+* xref:context:index.adoc[5 · Context engineering and RAG] +
+What the model sees: retrieval, embeddings, memory and compaction.
+* xref:agents:index.adoc[6 · Agents] +
+Workflows, the agent loop, tool design, MCP and multi-agent systems.
+* xref:coding-agents:index.adoc[7 · Coding agents] +
+Claude Code, Codex and friends: memory files, plans, skills and hooks.
+* xref:harness:index.adoc[8 · Harness engineering] +
+Guides and sensors, long-running harnesses, loops and graphs.
+* xref:production:index.adoc[9 · Production and safety] +
+Evals, guardrails, security, cost and responsible use.
+* xref:frontier:index.adoc[10 · The frontier] +
+What is moving right now, and how to keep up after this course.
+* xref:capstone:index.adoc[11 · Capstone] +
+Build and ship an agent with a real harness, end to end.
+
+NOTE: Part 1 is complete. Parts 2 to 11 are outlined and being written, in the
+open. xref:contribute.adoc[Help write them].
+
+== Why another course?
+
+Good free material exists, but each covers one slice: model internals, or
+building GenAI apps, or harness engineering. This course connects them into one
+path, so each idea has the foundation it needs and leads to the next. Where an
+existing course explains something best, we link to it instead of repeating it.
+See xref:resources.adoc[] for the courses we build on.
+
+TIP: New to all of this? Read xref:how-to-learn.adoc[] first. It takes three
+minutes and tells you how to get the most out of each lesson.

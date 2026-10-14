@@ -1,0 +1,39 @@
+= Part 2 · How LLMs work
+:description: Tokens, embeddings, attention, training stages, sampling, and why models hallucinate.
+:navtitle: 2 · How LLMs work
+
+[.hero]
+--
+An LLM is a next-word predictor trained on a vast amount of text, then taught to be an assistant. This part opens the box, layer by layer.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. Tokens: how text becomes numbers, and why models miscount letters
+. Embeddings: meaning as a position in space
+. Attention and the Transformer, by intuition
+. Pretraining: predicting the next token at scale
+. From base model to assistant: fine-tuning, RLHF and constitutions
+. Sampling: temperature, top-p, and why answers vary
+. Context windows and their limits
+. Hallucination: why fluent is not the same as true
+. Reasoning models: thinking before answering
+. Open and closed models, sizes, and how to choose
+. Lab (Python): a tiny character-level language model from scratch
+
+== After this part you can
+
+* Explain how a prompt becomes tokens, flows through a Transformer and becomes an answer.
+* Say why the same prompt gives different answers, and how to control it.
+* Predict when a model is likely to hallucinate.
+* Pick a model by size, cost, speed and licence.
+
+== Go deeper
+
+* https://github.com/karpathy/nn-zero-to-hero[Neural Networks: Zero to Hero (Karpathy)]
+* https://github.com/rasbt/LLMs-from-scratch[Build a Large Language Model from scratch (Raschka)]
+* https://jalammar.github.io/illustrated-transformer/[The Illustrated Transformer (Alammar)]
+
+Next: xref:prompting:index.adoc[Part 3 · Prompt engineering].

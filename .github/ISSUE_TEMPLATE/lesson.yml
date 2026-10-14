@@ -1,0 +1,40 @@
+name: Write or propose a lesson
+description: Claim a lesson from a part's outline, or propose a new one.
+labels: [lesson]
+body:
+  - type: dropdown
+    id: part
+    attributes:
+      label: Part
+      options:
+        - 1 · Foundations
+        - 2 · How LLMs work
+        - 3 · Prompt engineering
+        - 4 · Building with model APIs
+        - 5 · Context engineering and RAG
+        - 6 · Agents
+        - 7 · Coding agents
+        - 8 · Harness engineering
+        - 9 · Production and safety
+        - 10 · The frontier
+        - 11 · Capstone
+    validations:
+      required: true
+  - type: input
+    id: lesson
+    attributes:
+      label: Lesson
+      description: The line from the part's outline, or a new title.
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Plan
+      description: The two to four things a learner will know after it, and any sources you will use.
+  - type: checkboxes
+    id: write
+    attributes:
+      label: Writing it
+      options:
+        - label: I would like to write this lesson myself.

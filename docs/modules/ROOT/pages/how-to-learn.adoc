@@ -1,0 +1,58 @@
+= How to use this course
+:description: How lessons, checks and labs fit together, and what you need before you start.
+
+== How a lesson works
+
+Every lesson has the same shape:
+
+. *What you will learn*: two to four goals, so you know what to look for.
+. *The lesson*: short sections, each with one idea.
+. *Key ideas*: the lesson in five lines. Reread these before the next lesson.
+. *Check yourself*: a few questions. Answer them in your head or on paper
+  before you open the answer.
+
+Each part ends with a *lab*: a small program you build and run yourself. The
+labs live in the {labs-url}[`labs/` folder] of the repository.
+
+== What you need
+
+[cols="1,3"]
+|===
+| Part | What you need
+
+| 1–3
+| A browser. For the labs, Python 3.11 or later. No libraries, no GPU.
+
+| 4–6
+| An API key for one model provider. Free tiers or a few dollars of credit
+cover every lab. Or run an open model locally.
+
+| 7–8
+| A coding agent: Claude Code, Codex, Cursor or similar, and a Git repository
+to practise on.
+
+| 9–11
+| What you used above. Nothing new to buy.
+|===
+
+== Five habits that make it stick
+
+. *Type the code, do not paste it.* Your fingers notice details your eyes skip.
+. *Predict before you run.* Write down what you expect. Being wrong is where
+  the learning is.
+. *Ask a model, then check.* Use an AI assistant to explain what you do not
+  understand, then verify the answer against the lesson. That is part 9's
+  "discernment" in practice.
+. *Explain it to someone.* If you cannot explain a lesson in two minutes, read
+  its key ideas again.
+. *Build something of your own* after each part, however small.
+
+== Pace
+
+The full course is about 60 to 80 hours. At five hours a week that is three to
+four months. You do not need all of it: xref:paths.adoc[] lists shorter
+routes for different goals.
+
+NOTE: The field moves fast. Concepts in parts 1 to 3 change slowly. Product
+names and features in parts 7 and 10 change every few months. Each page shows
+when it was last updated.

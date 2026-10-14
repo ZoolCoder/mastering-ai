@@ -1,0 +1,54 @@
+= Learning paths
+:description: Five routes through the course, depending on who you are and what you want to do with AI.
+
+Every path starts at part 1. The later parts each path skips are still there
+when you want them.
+
+== Everyone: use AI well in work and life
+
+For anyone, technical or not, who wants to understand AI and use it with
+confidence. About 15 hours.
+
+[cols="1,3"]
+|===
+| Part | Why
+
+| xref:foundations:index.adoc[1 · Foundations] | What AI is and is not.
+| xref:llms:index.adoc[2 · How LLMs work] | Read the lessons, skip the lab.
+| xref:prompting:index.adoc[3 · Prompt engineering] | The biggest win for daily use.
+| xref:production:index.adoc[9 · Production and safety] | The safety and responsible-use lessons.
+| xref:frontier:index.adoc[10 · The frontier] | Where it is going.
+|===
+
+== Developer: build with AI and code with agents
+
+For developers who want to add AI to their apps and work well with coding
+agents. About 40 hours.
+
+Parts 1 → 2 → 3 → 4 → 6 → 7 → 9.
+
+== AI engineer: build AI products
+
+For developers who want to build AI products for a living: retrieval, agents,
+evals. About 60 hours.
+
+Parts 1 → 2 → 3 → 4 → 5 → 6 → 9 → 11.
+
+== Harness engineer: make agents reliable
+
+For people who already build with agents and want them to finish long tasks
+without supervision. About 30 hours.
+
+Parts 1 (skim) → 3 → 5 → 6 → 7 → 8 → 9 → 11.
+
+== Full mastery
+
+Everything, in order: parts 1 to 11. About 80 hours. At the end you can explain
+every layer, from a single neuron to a multi-agent harness, and build each one.
+
+[TIP]
+====
+Not sure which path to pick? Start with *Developer* if you write code, and
+*Everyone* if you do not. You can switch paths at any point; none of them
+repeat work.
+====

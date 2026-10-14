@@ -1,0 +1,36 @@
+= Part 5 · Context engineering and RAG
+:description: What the model sees: retrieval, embeddings, memory and compaction.
+:navtitle: 5 · Context engineering and RAG
+
+[.hero]
+--
+A model can only use what is in its context window. Context engineering is choosing the smallest set of tokens that gets the job done.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. From prompt engineering to context engineering
+. Embeddings and similarity search
+. Retrieval-augmented generation (RAG), end to end
+. Chunking, hybrid search and re-ranking
+. Vector databases and when you do not need one
+. Evaluating retrieval: recall before generation
+. Memory: short-term, long-term and files as memory
+. Context rot, compaction and just-in-time loading
+. Lab (Python): a RAG app over your own notes, with an eval
+
+== After this part you can
+
+* Build a RAG pipeline and say which stage causes a bad answer.
+* Decide what goes into context, what is retrieved on demand, and what is left out.
+* Keep a long-running conversation useful with compaction and memory.
+
+== Go deeper
+
+* https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents[Effective context engineering for AI agents (Anthropic)]
+* https://www.anthropic.com/news/contextual-retrieval[Contextual retrieval (Anthropic)]
+* https://github.com/avbiswas/context-engineering-dspy[Context engineering with DSPy]
+
+Next: xref:agents:index.adoc[Part 6 · Agents].

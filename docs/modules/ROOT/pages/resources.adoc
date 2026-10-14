@@ -1,0 +1,67 @@
+= Resources and credits
+:description: The open courses and guides this course builds on, and where to go deeper on each topic.
+
+This course stands on excellent open work. Where one of these explains a topic
+best, the lessons link to it instead of repeating it. All are free.
+
+== Courses we build on
+
+[cols="2,1,3"]
+|===
+| Resource | Licence | Best for
+
+| https://github.com/walkinglabs/learn-harness-engineering[walkinglabs/learn-harness-engineering]
+| MIT
+| Harness engineering in depth. Its five-subsystem model (instructions, tools,
+environment, state, feedback) shapes part 8.
+
+| https://github.com/microsoft/generative-ai-for-beginners[microsoft/generative-ai-for-beginners]
+| MIT
+| Building generative AI apps, lesson by lesson.
+
+| https://github.com/microsoft/ai-agents-for-beginners[microsoft/ai-agents-for-beginners]
+| MIT
+| Agent design patterns with runnable samples.
+
+| https://github.com/karpathy/nn-zero-to-hero[karpathy/nn-zero-to-hero]
+| MIT
+| Neural networks and GPT from scratch, on video. The deep dive behind parts 1 and 2.
+
+| https://github.com/rasbt/LLMs-from-scratch[rasbt/LLMs-from-scratch]
+| Apache 2.0
+| Building, pretraining and fine-tuning an LLM in PyTorch.
+
+| https://github.com/mlabonne/llm-course[mlabonne/llm-course]
+| Apache 2.0
+| A roadmap of LLM science and engineering, with notebooks.
+
+| https://github.com/dair-ai/Prompt-Engineering-Guide[dair-ai/Prompt-Engineering-Guide]
+| MIT
+| Every prompting technique, with papers.
+
+| https://github.com/humanlayer/12-factor-agents[humanlayer/12-factor-agents]
+| Apache 2.0 / CC BY-SA 4.0
+| Principles for agents that hold up in production.
+|===
+
+== Guides from the model makers
+
+* https://www.anthropic.com/engineering/building-effective-agents[Building effective agents] (Anthropic)
+* https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents[Effective context engineering for AI agents] (Anthropic)
+* https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents[Effective harnesses for long-running agents] (Anthropic)
+* https://openai.com/index/harness-engineering/[Harness engineering] (OpenAI)
+* https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview[Prompt engineering overview] (Anthropic)
+
+== Curated lists
+
+* https://github.com/walkinglabs/awesome-harness-engineering[walkinglabs/awesome-harness-engineering]
+* https://github.com/ai-boost/awesome-harness-engineering[ai-boost/awesome-harness-engineering]
+* https://github.com/AgenticAiLabs/Ai-Engineering-Roadmap[AgenticAiLabs/Ai-Engineering-Roadmap]
+
+== Licence of this course
+
+The lesson text is licensed under
+https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0]:
+share and adapt it, with credit. The code in `labs/` is MIT licensed. Material
+quoted from the resources above keeps its own licence and is credited where it
+is used.

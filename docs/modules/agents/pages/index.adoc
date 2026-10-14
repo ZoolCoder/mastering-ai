@@ -1,0 +1,38 @@
+= Part 6 · Agents
+:description: Workflows, the agent loop, tool design, MCP and multi-agent systems.
+:navtitle: 6 · Agents
+
+[.hero]
+--
+An agent is a model using tools in a loop until a goal is met. This part builds one from scratch, then shows when not to.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. Workflows versus agents: who decides the next step
+. Workflow patterns: chaining, routing, parallelisation, orchestrator-workers, evaluator-optimizer
+. The agent loop: think, act, observe, repeat
+. Designing tools an agent can use well
+. The Model Context Protocol (MCP): tools as plug-ins
+. Agent SDKs and frameworks, and when to skip them
+. Planning, reflection and stopping conditions
+. Multi-agent systems: orchestrators and subagents
+. 12-factor agents: owning your loop, prompts and state
+. Lab (TypeScript): an agent loop in 100 lines, then an MCP server
+
+== After this part you can
+
+* Build an agent loop without a framework and explain every line.
+* Choose the simplest pattern that solves a problem.
+* Write an MCP server and connect it to an agent.
+
+== Go deeper
+
+* https://www.anthropic.com/engineering/building-effective-agents[Building effective agents (Anthropic)]
+* https://github.com/microsoft/ai-agents-for-beginners[AI Agents for Beginners (Microsoft)]
+* https://github.com/humanlayer/12-factor-agents[12-factor agents (HumanLayer)]
+* https://modelcontextprotocol.io/[Model Context Protocol]
+
+Next: xref:coding-agents:index.adoc[Part 7 · Coding agents].

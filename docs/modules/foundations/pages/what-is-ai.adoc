@@ -1,0 +1,96 @@
+= 1.1 What AI is
+:description: AI, machine learning and deep learning, and how they fit inside each other.
+
+.What you will learn
+* What people mean by "AI", and why the word is slippery.
+* How AI, machine learning and deep learning relate.
+* What a model is.
+
+== Rules versus learning
+
+There are two ways to make a computer do something clever.
+
+*Write the rules.* A spam filter could check: "if the subject contains FREE
+MONEY, it is spam." This is ordinary programming. It works until spammers write
+"FR3E M0NEY", and then you write another rule, and another.
+
+*Learn the rules.* Instead, show the computer 100,000 emails, each labelled
+"spam" or "not spam", and let it work out the patterns itself. Nobody writes the
+rules. The computer finds them in the data.
+
+The second way is *machine learning*, and almost everything called AI today
+works like that.
+
+== Three nested ideas
+
+[cols="1,3"]
+|===
+| Term | Meaning
+
+| Artificial intelligence (AI)
+| The broad goal: computers doing tasks that seem to need intelligence, such as
+understanding language, recognising images or making plans. Any technique
+counts, including hand-written rules.
+
+| Machine learning (ML)
+| A way to reach that goal: the computer learns patterns from examples instead
+of following rules a person wrote.
+
+| Deep learning
+| A kind of machine learning that uses large neural networks with many layers.
+Image recognition, speech recognition and LLMs are all deep learning.
+|===
+
+Each sits inside the one before: all deep learning is machine learning, and
+all machine learning is AI. Not all AI is machine learning.
+
+== What a model is
+
+A *model* is the thing machine learning produces. Think of it as a function: it
+takes an input and gives an output.
+
+* Spam filter: email in, "spam" or "not spam" out.
+* Image classifier: photo in, "cat" or "dog" out.
+* Language model: text in, the next word out.
+
+Inside a model are numbers called *parameters* (also called *weights*). Learning
+means adjusting those numbers until the outputs are good. A small model has a
+few thousand parameters. A large language model has billions.
+
+When you read "a 70-billion-parameter model", that is all it means: 70 billion
+numbers, tuned on data.
+
+== What AI is not
+
+* *Not a database of facts.* A model stores patterns, not a list of facts it
+  looks up. That is why it can be fluent and wrong at the same time.
+* *Not a mind.* Today's models do not want anything and do not remember you
+  between conversations unless a program around them stores and replays the
+  history. Part 6 shows how those programs work.
+* *Not magic.* Every output comes from arithmetic on numbers learned from data.
+  Biased or missing data gives biased or missing behaviour.
+
+.Key ideas
+****
+* Programming writes the rules; machine learning learns them from examples.
+* AI ⊃ machine learning ⊃ deep learning.
+* A model is a function with learned numbers inside, called parameters.
+* Models store patterns, not facts.
+****
+
+== Check yourself
+
+. A thermostat turns the heating on below 19 °C. Is it machine learning?
+. What does a model's "parameter count" measure?
+. Why can a model be fluent and wrong at the same time?
+
+[%collapsible]
+.Answers
+====
+. No. A person wrote the rule. Nothing was learned from data.
+. How many learned numbers are inside the model.
+. It learned patterns of language, not a checked list of facts. A fluent
+  pattern can still describe something false.
+====
+
+Next: xref:how-machines-learn.adoc[].

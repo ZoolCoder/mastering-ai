@@ -1,0 +1,37 @@
+= Part 9 · Production and safety
+:description: Evals, guardrails, security, cost and responsible use.
+:navtitle: 9 · Production and safety
+
+[.hero]
+--
+A demo works once. A product works every time, for everyone, without leaking data or burning money. This part closes that gap.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. Evals: unit tests for AI, from ten cases to a suite
+. LLM-as-judge and its pitfalls
+. Observability: traces, logs and replay
+. Prompt injection and the lethal trifecta
+. Guardrails, permissions and human approval
+. Privacy, data handling and secrets
+. Cost and latency: caching, routing and smaller models
+. Bias, fairness and responsible use
+. Discernment: knowing when to trust AI output
+. Lab: add evals, tracing and an injection test to the part 6 agent
+
+== After this part you can
+
+* Build an eval suite and use it to decide whether a change ships.
+* Explain prompt injection and design an agent that limits its blast radius.
+* Cut cost and latency without losing quality.
+
+== Go deeper
+
+* https://hamel.dev/blog/posts/evals/[Your AI product needs evals (Husain)]
+* https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/[The lethal trifecta (Willison)]
+* https://genai.owasp.org/llm-top-10/[OWASP Top 10 for LLM applications]
+
+Next: xref:frontier:index.adoc[Part 10 · The frontier].

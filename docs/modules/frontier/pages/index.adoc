@@ -1,0 +1,33 @@
+= Part 10 · The frontier
+:description: What is moving right now, and how to keep up after this course.
+:navtitle: 10 · The frontier
+
+[.hero]
+--
+This part changes most often. It covers the trends shaping how AI is built today, and how to keep learning once the course ends.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. Computer use and browser agents
+. Managed and background agents
+. Multi-agent research and orchestration
+. Small, local and on-device models
+. Multimodal models: voice, image and video
+. AI jobs: engineers, champions and everyone else
+. How to keep up without drowning
+
+== After this part you can
+
+* Explain the main current trends and where each is useful today.
+* Build a personal routine for staying current.
+
+== Go deeper
+
+* https://github.com/ai-boost/awesome-harness-engineering[Awesome harness engineering (ai-boost)]
+* https://github.com/mlabonne/llm-course[LLM course (Labonne)]
+* https://github.com/AgenticAiLabs/Ai-Engineering-Roadmap[AI engineering roadmap]
+
+Next: xref:capstone:index.adoc[Part 11 · Capstone].

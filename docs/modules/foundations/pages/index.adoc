@@ -1,0 +1,38 @@
+= Part 1 · Foundations
+:description: What AI is, how machines learn from data, and how a neural network works, explained from zero.
+:navtitle: 1 · Foundations
+
+[.hero]
+--
+Before LLMs and agents make sense, you need four ideas: a model, data,
+learning from mistakes, and a network of simple units. This part builds each
+one from scratch.
+--
+
+[.cta]
+xref:what-is-ai.adoc[Start 1.1] xref:lab.adoc[Jump to the lab]
+
+== Lessons
+
+[.cards]
+* xref:what-is-ai.adoc[1.1 What AI is] +
+AI, machine learning and deep learning, and how they fit together.
+* xref:how-machines-learn.adoc[1.2 How machines learn] +
+Data, features, labels, and the three kinds of learning.
+* xref:neural-networks.adoc[1.3 Neural networks] +
+A neuron is a weighted sum. A network is many of them in layers.
+* xref:training.adoc[1.4 How training works] +
+Loss, gradients and gradient descent, with no calculus needed.
+* xref:road-to-llms.adoc[1.5 The road to LLMs] +
+From image classifiers to ChatGPT in six steps.
+* xref:lab.adoc[Lab: train a neuron] +
+Teach one neuron a rule, in about 60 lines of plain Python.
+
+== After this part you can
+
+* Explain the difference between AI, machine learning and deep learning.
+* Say what a model, a parameter and a dataset are.
+* Explain how a network improves by reducing its error, step by step.
+* Read the phrase "a 70-billion-parameter model" and know what it means.
+
+Time: about 5 hours, including the lab.

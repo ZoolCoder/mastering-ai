@@ -1,0 +1,20 @@
+name: mastering-ai
+title: Mastering AI
+version: ~
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
+  - modules/foundations/nav.adoc
+  - modules/llms/nav.adoc
+  - modules/prompting/nav.adoc
+  - modules/apis/nav.adoc
+  - modules/context/nav.adoc
+  - modules/agents/nav.adoc
+  - modules/coding-agents/nav.adoc
+  - modules/harness/nav.adoc
+  - modules/production/nav.adoc
+  - modules/frontier/nav.adoc
+  - modules/capstone/nav.adoc
+asciidoc:
+  attributes:
+    labs-url: https://github.com/zoolcoder/mastering-ai/tree/main/labs

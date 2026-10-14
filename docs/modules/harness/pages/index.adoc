@@ -1,0 +1,41 @@
+= Part 8 · Harness engineering
+:description: Guides and sensors, long-running harnesses, loops and graphs.
+:navtitle: 8 · Harness engineering
+
+[.hero]
+--
+Agent = model + harness. The harness is everything around the model: instructions, tools, environment, state and feedback. Strong models fail in weak harnesses.
+--
+
+NOTE: The lessons in this part are being written. The outline below is the plan; until each lesson lands, the links under *Go deeper* cover the same ground.
+
+== Lessons
+
+. Why capable agents still fail
+. What a harness is: the five subsystems
+. The repository as the system of record
+. Instructions that scale: maps, not manuals
+. Continuity across sessions: progress files and handoffs
+. Initialisation: give each session a clean start
+. Scope control: one feature at a time, and feature lists
+. No premature victory: definitions of done
+. Feedback: tests, end-to-end checks and observability
+. Loop engineering: Ralph loops, goals and maker-checker
+. Graph engineering: plans as graphs of agents
+. Inside real harnesses: Claude Code, Codex and others
+. Lab (TypeScript): build a harness that ships a small app across many sessions
+
+== After this part you can
+
+* Diagnose an agent failure as a harness problem and fix the right subsystem.
+* Design a harness for a long-running task: instructions, state, checks and a loop.
+* Choose between one loop, maker-checker and a graph of agents.
+
+== Go deeper
+
+* https://github.com/walkinglabs/learn-harness-engineering[Learn Harness Engineering (WalkingLabs)]
+* https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents[Effective harnesses for long-running agents (Anthropic)]
+* https://openai.com/index/harness-engineering/[Harness engineering (OpenAI)]
+* https://github.com/walkinglabs/awesome-harness-engineering[Awesome harness engineering]
+
+Next: xref:production:index.adoc[Part 9 · Production and safety].

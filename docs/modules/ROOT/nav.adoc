@@ -1,0 +1,5 @@
+* xref:index.adoc[Start here]
+** xref:how-to-learn.adoc[How to use this course]
+** xref:paths.adoc[Learning paths]
+** xref:resources.adoc[Resources and credits]
+** xref:contribute.adoc[Contribute]

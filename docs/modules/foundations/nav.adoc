@@ -1,0 +1,7 @@
+* xref:index.adoc[1 · Foundations]
+** xref:what-is-ai.adoc[1.1 What AI is]
+** xref:how-machines-learn.adoc[1.2 How machines learn]
+** xref:neural-networks.adoc[1.3 Neural networks]
+** xref:training.adoc[1.4 How training works]
+** xref:road-to-llms.adoc[1.5 The road to LLMs]
+** xref:lab.adoc[Lab: train a neuron]

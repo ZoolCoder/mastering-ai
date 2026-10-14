@@ -1,0 +1,98 @@
+= 1.3 Neural networks
+:description: A neuron is a weighted sum followed by a squash. A network is many neurons in layers.
+
+.What you will learn
+* What one artificial neuron computes.
+* How neurons stack into layers and networks.
+* Why depth lets a network learn complex things.
+
+== One neuron
+
+An artificial neuron does three things:
+
+. Multiplies each input by a *weight*.
+. Adds the results, plus one extra number called the *bias*.
+. Passes the sum through an *activation function*.
+
+Should you take an umbrella? Two inputs: is it cloudy (1 or 0), and the
+forecast chance of rain (0 to 1).
+
+[source,text]
+----
+sum = cloudy × 0.4 + rain_chance × 2.0 + bias (−1.0)
+
+cloudy = 1, rain_chance = 0.7  →  0.4 + 1.4 − 1.0 = 0.8
+----
+
+The weights say how much each input matters: rain chance matters five times
+more than clouds. The bias sets how easily the neuron fires.
+
+The activation function then turns the sum into an output. A common one,
+the *sigmoid*, squashes any number into the range 0 to 1:
+
+[source,text]
+----
+sigmoid(0.8) ≈ 0.69   → 69% "take the umbrella"
+----
+
+The weights and the bias are the neuron's *parameters*. Learning means finding
+good values for them.
+
+== Layers
+
+One neuron can only draw a straight line through the data. Real problems need
+more, so neurons are stacked:
+
+[source,text]
+----
+inputs        hidden layer       hidden layer       output
+  x1 ──┐      ┌─ n ─┐            ┌─ n ─┐
+  x2 ──┼──▶   ├─ n ─┼──▶         ├─ n ─┼──▶          y
+  x3 ──┘      └─ n ─┘            └─ n ─┘
+----
+
+* The *input layer* receives the features.
+* Each *hidden layer* takes the previous layer's outputs as its inputs.
+* The *output layer* gives the prediction.
+
+Every connection has its own weight. A network with 1,000 inputs and a hidden
+layer of 1,000 neurons already has a million weights in that one layer.
+
+== Why depth works
+
+Each layer builds on the one before. In an image network, early layers learn to
+detect edges, middle layers combine edges into shapes such as eyes or wheels,
+and late layers combine shapes into objects such as faces or cars. Nobody
+programs those detectors. They emerge from training.
+
+The activation function is what makes this possible. Without it, stacking
+layers would collapse into one big weighted sum, still a straight line. The
+squash adds the bends that let a deep network fit curved, complicated patterns.
+
+"Deep learning" just means networks with many layers.
+
+.Key ideas
+****
+* Neuron: weighted sum of inputs, plus bias, through an activation function.
+* Weights and biases are the parameters.
+* Layers feed into layers; depth builds complex features from simple ones.
+* Activation functions are what make depth useful.
+****
+
+== Check yourself
+
+. A neuron has weights 0.5 and −1.0, bias 0.2, and inputs 2 and 1. What is
+  the sum before activation?
+. What would happen if a network had no activation functions?
+. Where do the "edge detectors" in an image network come from?
+
+[%collapsible]
+.Answers
+====
+. 2 × 0.5 + 1 × (−1.0) + 0.2 = 0.2.
+. All the layers would collapse into one linear function: no more powerful
+  than a single layer.
+. Training. They emerge because they help reduce the error; nobody writes them.
+====
+
+Next: xref:training.adoc[].

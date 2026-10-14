@@ -1,0 +1,31 @@
+= Contribute
+:description: How to report a mistake, write a lesson or add a lab to this open course.
+
+This course is open source and written in the open. You do not need to be an
+expert to help: a learner who says "this paragraph lost me" improves it as much
+as an expert who adds a lesson.
+
+== Status
+
+[cols="1,3"]
+|===
+| Part | Status
+
+| 1 · Foundations | Complete: five lessons and a lab.
+| 2 to 11 | Outlined. Each part's page lists the planned lessons. Lessons are being written.
+|===
+
+== Ways to help
+
+* *Spotted a mistake or a confusing sentence?*
+  https://github.com/zoolcoder/mastering-ai/issues/new/choose[Open an issue].
+  "I did not understand this" is a valid report.
+* *Small fix?* Use the edit link on any page to change it on GitHub and open a
+  pull request.
+* *Write a lesson.* Pick one from a part's outline,
+  https://github.com/zoolcoder/mastering-ai/issues/new/choose[claim it in an issue],
+  and follow the template.
+* *Add a lab*, or *translate the course*.
+
+The https://github.com/zoolcoder/mastering-ai/blob/main/CONTRIBUTING.md[contributing guide]
+has the lesson template, the style guide and the build steps.
